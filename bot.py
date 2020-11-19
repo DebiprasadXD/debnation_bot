@@ -9,7 +9,7 @@ bot=telebot.TeleBot(token=bot_token)
 
 @bot.message_handler(commands=['start'])
 def send_welcome(message):
-  bot.reply_to(message,"Hi There Welcome🤗;        I can echo your message,type any message 😉🎤")
+  bot.reply_to(message,"Hi There Welcome!🤗      I can echo your message,type any message 😉🎤")
  
 @bot.message_handler(commands=['yt'])
 def send_welcome(message):
