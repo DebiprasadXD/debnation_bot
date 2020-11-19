@@ -17,7 +17,7 @@ def send_welcome(message):
  
 @bot.message_handler(commands=['help'])
 def send_welcome(message):
-  bot.reply_to(message,'Contact @DebNationXD for support or check my github page: https://github.com/DebiprasadXD/Instantbit_bot                       Thank You 🙏')
+  bot.reply_to(message,'Contact @DebNationXD for support or check my github page: https://github.com/DebiprasadXD/debnation_bot/                   Thank You 🙏')
   
 @bot.message_handler(func=lambda message: True)
 def echo_message(message):
