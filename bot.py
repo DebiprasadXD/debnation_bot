@@ -2,14 +2,14 @@ import telebot
 import time
 
 
-bot_token='your_bot_token'
+bot_token='your_token'
 
   
 bot=telebot.TeleBot(token=bot_token)
 
 @bot.message_handler(commands=['start'])
 def send_welcome(message):
-  bot.reply_to(message,"Hi There Pal Welcome🤗       What's up! I can echo your message,type any message 😉🎤")
+  bot.reply_to(message,"Hi There Welcome🤗;        I can echo your message,type any message 😉🎤")
  
 @bot.message_handler(commands=['yt'])
 def send_welcome(message):
@@ -17,7 +17,7 @@ def send_welcome(message):
  
 @bot.message_handler(commands=['help'])
 def send_welcome(message):
-  bot.reply_to(message,'Contact @DebNationXD for support or check my github page: https://github.com/DebiprasadXD/debnation_bot/                   Thank You 🙏')
+  bot.reply_to(message,'Contact my master❤️🖤 @DebNationXD for any support that you need              Thank You 🙏')
   
 @bot.message_handler(func=lambda message: True)
 def echo_message(message):
