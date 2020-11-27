@@ -16,6 +16,12 @@ def send_welcome(message):
 def send_welcome(message):
   bot.reply_to(message,'Contact my piro owner❤️😂... @DebNationXD for any support that you need...........Thank You 🙏')
   
+    
+@bot.message_handler(commands=['contribution'])
+def send_welcome(message):
+  bot.reply_to(message,'Thanks to my piro friend ❤️ @arnab431 sar 🙏 to make this bot possible.')
+  
+  
 @bot.message_handler(func=lambda message: True)
 def echo_message(message):
   bot.reply_to(message, message.text)
