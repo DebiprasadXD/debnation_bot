@@ -1,11 +1,8 @@
 import telebot
 import time
-
-
-bot_token='your_bot-token'
-
+from decouple import config
   
-bot=telebot.TeleBot(token=bot_token)
+bot=telebot.TeleBot(config('BOT_TOKEN'))
 
 @bot.message_handler(commands=['start'])
 def send_welcome(message):
@@ -31,11 +28,4 @@ while True :
     bot.polling()
   except Expectation:
     time.sleep(25)
-   
-     
-     
-    
- 
-       
-     
- 
+
