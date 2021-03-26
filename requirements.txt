@@ -1,2 +1,1 @@
-pyTelegramBotApi
-python-decouple==3.3
+pyTelegramBotApi==3.6.7
