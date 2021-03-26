@@ -1,8 +1,7 @@
 import telebot
 import time
-from decouple import config
   
-bot=telebot.TeleBot(config('BOT_TOKEN'))
+bot=telebot.TeleBot(BOT_TOKEN)
 
 @bot.message_handler(commands=['start'])
 def send_welcome(message):
